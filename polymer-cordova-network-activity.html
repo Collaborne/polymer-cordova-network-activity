@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id='polymer-cordova-network-activity'>
+
+	<template>
+	</template>
+</dom-module>
+
+<script>
+
+(function() {
+
+	Polymer({
+		is: 'polymer-cordova-network-activity',
+		properties: {
+			running: {
+				type: Boolean,
+				notify: true,
+				observer: '_runningChanged'
+			}
+		},
+		
+		// Public methods
+		start: function() {
+			this.running = true;
+		},
+		stop: function() {
+			this.running = false;
+		},
+		
+		// Private methods
+		_runningChanged: function(newValue, oldValue) {
+			if (typeof NetworkActivity == 'undefined') {
+				return;
+			}
+
+			if (newValue) {
+				NetworkActivity.activityStart();
+			} else {
+				NetworkActivity.activityStop();
+			}
+		}
+	});
+
+})();
+
+</script>
