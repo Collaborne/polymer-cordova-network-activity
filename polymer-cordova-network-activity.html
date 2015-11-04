@@ -15,7 +15,7 @@
 			visible: {
 				type: Boolean,
 				notify: true,
-				observer: '_runningChanged'
+				observer: '_visibleChanged'
 			}
 		},
 		
@@ -28,7 +28,7 @@
 		},
 		
 		// Private methods
-		_runningChanged: function(newValue, oldValue) {
+		_visibleChanged: function(newValue, oldValue) {
 			if (typeof NetworkActivityIndicator == 'undefined') {
 				return;
 			}
