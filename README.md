@@ -3,7 +3,7 @@ polymer-cordova-network-activity [![Bower version](https://badge.fury.io/bo/poly
 
 Web component to control Network Activity Indicator via Cordova plugin. The web component is built with [Polymer 1.x](https://www.polymer-project.org).
 
-You need to install the Cordova plugin [com.mallzee.plugin.networkactivity](https://github.com/mallzee/network-activity) to use this Polymer component.
+You need to install the Cordova plugin [cordova-plugin-networkactivityindicator](https://github.com/ohh2ahh/NetworkActivityIndicator) to use this Polymer component.
 
 
 ## Usage
@@ -11,7 +11,7 @@ You need to install the Cordova plugin [com.mallzee.plugin.networkactivity](http
 `bower install polymer-cordova-network-activity`
 
 ```html
-<polymer-cordova-network-activity running={{loading}}></polymer-cordova-network-activity>
+<polymer-cordova-network-activity visible={{loading}}></polymer-cordova-network-activity>
 ```
 
 
@@ -21,17 +21,17 @@ These properties are available for `polymer-cordova-network-activity`:
 
 Property    | Type    | Description
 ----------- | ------- | ----------------------------
-**running** | Boolean | Flag if the network activity indicator is currently shown
+**visible** | Boolean | Flag if the network activity indicator is currently shown
 
 
 ## Methods
 
 These methods are available for `polymer-cordova-network-activity`:
 
-Method    | Description
---------- | ----------------------------
-**start** | Starts the network activity indicator
-**stop**  | Stops the network activity indicator
+Method   | Description
+-------- | ----------------------------
+**show** | Shows the network activity indicator
+**hide** | Hides the network activity indicator
 
 
 ## License
