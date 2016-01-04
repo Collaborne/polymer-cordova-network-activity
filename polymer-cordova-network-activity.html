@@ -1,8 +1,15 @@
 <link rel="import" href="../polymer/polymer.html">
 
+<!-- 
+Web component to control Network Activity Indicator via Cordova plugin.
+
+### Example
+```html
+<polymer-cordova-network-activity visible={{loading}}></polymer-cordova-network-activity>
+```
+
+-->
 <dom-module id='polymer-cordova-network-activity'>
-	<template>
-	</template>
 </dom-module>
 
 <script>
@@ -12,6 +19,9 @@
 	Polymer({
 		is: 'polymer-cordova-network-activity',
 		properties: {
+			/**
+			 * True if the network activity indicator is currently shown
+			 */
 			visible: {
 				type: Boolean,
 				notify: true,
@@ -20,9 +30,16 @@
 		},
 		
 		// Public methods
+		/**
+		 * Shows the network activity indicator
+		 */
 		show: function() {
 			this.visible = true;
 		},
+
+		/**
+		 * Hides the network activity indicator
+		 */
 		hide: function() {
 			this.visible = false;
 		},
