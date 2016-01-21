@@ -1,19 +1,19 @@
-# Version 1.0.1
 language: node_js
 sudo: false
 node_js:
-  - stable
+- stable
 addons:
   firefox: '42.0'
-
+cache:
+  directories:
+  - node_modules
 before_script:
-  - npm install web-component-tester
-  - npm install bower
-  - bower install
-  - npm install polylint
-  - polylint
-  - export PATH=$PWD/node_modules/.bin:$PATH
-
+- npm install web-component-tester bower polylint
+- bower install
+- polylint
+- export PATH=$PWD/node_modules/.bin:$PATH
 script:
-  - xvfb-run wct
-  - ./gpages_build.sh Collaborne info@collaborne.com
+- xvfb-run wct
+- "./gpages_build.sh Collaborne info@collaborne.com"
+env:
+  secure: bEauqMtDf7CJVtzi8IHUpYOyncmxPQRJ/QYZ4wVIAXNL7n9KOWDLwtubkh/nBzMa3YPMVwqsTW+cHQ1Gj2XakGDMRJu9hFPLyK+ssL4aNjnLDmgnKv5pQsdFE4KLW0cv8+3Himc/g9T6GlJ9N8MEVQQCQ1VvMiBmtQUqINzmNouvESqu4nB+bRTXrW+NvwpxKbCxbulf8Y0aL6StyAdn7yRQr60Ti+sEnEEJqKRCEkRgTGg4P4DGgaYdNak0+Q2QM4gQ2nXPGSw/KTAbW0KtYI9EjgDTBoJL29s+NO6dXxe9jVVIHcsjMcwB50JTQvJeKwo4LDOklJA12t6LRPsqsen0Lb/DIVPYerNMY4gyKjK1n1pzXJhRtwBG1ormEjZS9H0MLhNT5L2wTVRwIyuBTiH63R0tBOUgL0jHrk3WYC7ki8A3gG3E1d2IpG7I+QNsL/yKRJNY86YD/kJSMWSXjswoIjDIBgUFnlfdhSkE5DpiYsN0O8OAnZZTagZrqIXN+sBEAIYrOw5jCpDXsoCgNKulVrXjK+LcXQLbd6qiLpKG4FMWl+ivcYo53hYjyhRLI/VgOs9uhpCc8v333tKPAMa8UZsH5rpDhHxs5AA2GzkrZBkqzNntDbvwfyID8mW9t7I9tyAb0SEbt9Y1Beq24ej0Bs7sPsJdDW/ZWLrd2Cg=
