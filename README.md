@@ -1,7 +1,4 @@
-_[Demo and API Docs](http://collaborne.github.io/polymer-cordova-network-activity)_
-
-
-polymer-cordova-network-activity [![Bower version](https://badge.fury.io/bo/polymer-cordova-network-activity.svg)](http://badge.fury.io/bo/polymer-cordova-network-activity) [![Travis state](https://travis-ci.org/Collaborne/polymer-cordova-network-activity.svg?branch=master)](https://travis-ci.org/Collaborne/polymer-cordova-network-activity)
+polymer-cordova-network-activity [![Bower version](https://badge.fury.io/bo/polymer-cordova-network-activity.svg)](http://badge.fury.io/bo/polymer-cordova-network-activity) [![Travis state](https://travis-ci.org/Collaborne/polymer-cordova-network-activity.svg?branch=master)](https://travis-ci.org/Collaborne/polymer-cordova-network-activity) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/polymer-cordova-network-activity)
 =========
 
 Web component to control Network Activity Indicator via Cordova plugin. The web component is built with [Polymer](https://www.polymer-project.org).
